@@ -10,7 +10,5 @@ if __name__ == '__main__':
     s = float(input("Введите сумму s: "))
     i = 0
 
-    while i < len(B):
-        if (B[i] > s):
-            print (A[i])
-        i = i + 1
+    d =[(volume) for volume, price in zip (A, B) if price > s]
+    print (d)
