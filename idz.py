@@ -8,7 +8,6 @@ if __name__ == '__main__':
     B = (560, 790, 1500, 2300, 1200, 790, 2500, 1500, 3000, 8550, 610, 1450, 950)
 
     s = float(input("Введите сумму s: "))
-    i = 0
-
+    
     d =[(volume) for volume, price in zip (A, B) if price > s]
     print (d)
